@@ -1,8 +1,7 @@
-package Utlity;
+package Utility;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.testng.Assert;
+
 
 import java.util.List;
 
@@ -18,15 +17,10 @@ public class MyFunc {
         }
     }
 
-    public static void SuccessMessageValidation(){
-        WebElement msgLabel= BaseDriver.driver.findElement(By.xpath("//div[@class='alert alert-success alert-dismissible']"));
-        Assert.assertTrue(msgLabel.getText().toLowerCase().contains("success"));
-    }
 
-    public static int randomGenerator(int sinir){
-        return (int)(Math.random()*sinir);
+    public static int RandomGenerator(int max, int min) {
+        return (int) (Math.random() * (max - min + 1));
     }
-
 
     public static boolean ListContainsString(List<WebElement> list, String aranacak){
         boolean bulundu=false;
