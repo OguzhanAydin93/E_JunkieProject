@@ -16,6 +16,15 @@ public class elementsBox {
     @FindBy(css = "[class='EJIframeV3 EJOverlayV3']")
     public WebElement frame1;
 
+    @FindBy(css = "input[class='Promo-Code-Value']")
+    public WebElement promoCode;
+
+    @FindBy(xpath = "//button[text()='Apply']")
+    public WebElement apply;
+
+    @FindBy(css = "div[class='Col2 Product-Desc']>h5")
+    public List<WebElement> cartItems;
+
 
 
 
