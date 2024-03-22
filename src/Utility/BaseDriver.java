@@ -1,4 +1,4 @@
-package Utlity;
+package Utility;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

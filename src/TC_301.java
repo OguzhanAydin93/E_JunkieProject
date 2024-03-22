@@ -1,7 +1,7 @@
 
 import Utility.elementsBox;
 import org.junit.Test;
-public class TC_301 extends Utlity.BaseDriver {
+public class TC_301 extends Utility.BaseDriver {
 
     @Test
     public void test(){
